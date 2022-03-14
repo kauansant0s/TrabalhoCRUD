@@ -309,7 +309,7 @@ const styles = StyleSheet.create({
         alignItems: "center", 
         width: 200, 
         height: 40, 
-        borderColor: 'gray', 
+        borderColor: '#acbfb7', 
         borderWidth: 1,
         borderRadius: 10
     },
