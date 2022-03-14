@@ -261,7 +261,7 @@ constructor(props) {
                         Alert.alert("O campo marca não pode ser vazio") :this.insertCelular(formularioMarca, 
                             formularioModelo, formularioAno, formularioArmazenamento, formularioMemoriaRAM, 
                             formularioSO)}} 
-                        style={{ alignItems: "center", backgroundColor: '#d18681'}}>
+                        style={{ alignItems: "center", backgroundColor: '#d18681', borderRadius: 7}}>
                         <Icon name="md-add-circle-outline" size={30} color="white" />
                     </TouchableOpacity>
                 </View>
@@ -271,7 +271,7 @@ constructor(props) {
                     <TouchableOpacity onPress={() =>  {formularioId == null  ? 
                         Alert.alert("Não há objeto para atualizar") :this.atualizaCelular(formularioMarca,
                         formularioModelo, formularioAno, formularioArmazenamento, formularioMemoriaRAM, formularioSO)}} 
-                        style={{ alignItems: "center", backgroundColor: '#d18681'}}>
+                        style={{ alignItems: "center", backgroundColor: '#d18681', borderRadius: 7}}>
                         <Icon name="md-refresh-circle-outline" size={30} color="white" />
                     </TouchableOpacity>
                 </View>
@@ -279,7 +279,7 @@ constructor(props) {
                 <View style={styles.containerTouch}>
                 <TouchableOpacity onPress={() => { Id_pesquisar == null ? 
                     Alert.alert("O campo id não pode ser vazio") : this.localizaCelular(Id_pesquisar) }} 
-                    style={{ alignItems: "center", backgroundColor: '#d18681'}}>
+                    style={{ alignItems: "center", backgroundColor: '#d18681', borderRadius: 7}}>
                         <Icon name="md-search-circle-outline" size={30} color="white" />
                     </TouchableOpacity>
                 </View>
@@ -287,7 +287,7 @@ constructor(props) {
                 <View style={styles.containerTouch}>
                     <TouchableOpacity onPress={() => { formularioId == null ? 
                         Alert.alert("O campo de id não pode ser vazio") : this.deleteCelular(Id_pesquisar) }} 
-                        style={{ alignItems: "center", backgroundColor: '#d18681'}}>
+                        style={{ alignItems: "center", backgroundColor: '#d18681', borderRadius: 7}}>
                         <Icon name="md-close-circle-outline" size={30} color="white" />
                     </TouchableOpacity>
                 </View>
@@ -309,12 +309,14 @@ const styles = StyleSheet.create({
         alignItems: "center", 
         width: 200, 
         height: 40, 
-        borderColor: '#acbfb7', 
+        borderColor: '#111113', 
+        backgroundColor: '#acbfb7',
         borderWidth: 1,
-        borderRadius: 10
+        borderRadius: 10,
     },
     containerTouch:{
         width: 200,
         padding: 10,
+        borderRadius: 20,
     }
 });
